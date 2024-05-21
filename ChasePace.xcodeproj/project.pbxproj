@@ -1,0 +1,698 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27941FFE2BFC7E7100AEB856 /* ChasePace Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		279420032BFC7E7100AEB856 /* ChasePaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420022BFC7E7100AEB856 /* ChasePaceApp.swift */; };
+		279420052BFC7E7100AEB856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420042BFC7E7100AEB856 /* ContentView.swift */; };
+		279420072BFC7E7200AEB856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279420062BFC7E7200AEB856 /* Assets.xcassets */; };
+		2794200A2BFC7E7200AEB856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279420092BFC7E7200AEB856 /* Preview Assets.xcassets */; };
+		279420142BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420132BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift */; };
+		2794201E2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794201D2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift */; };
+		279420202BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27941FFF2BFC7E7100AEB856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27941FF12BFC7E7100AEB856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27941FFC2BFC7E7100AEB856;
+			remoteInfo = "ChasePace Watch App";
+		};
+		279420102BFC7E7200AEB856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27941FF12BFC7E7100AEB856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27941FFC2BFC7E7100AEB856;
+			remoteInfo = "ChasePace Watch App";
+		};
+		2794201A2BFC7E7200AEB856 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27941FF12BFC7E7100AEB856 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27941FFC2BFC7E7100AEB856;
+			remoteInfo = "ChasePace Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		279420262BFC7E7200AEB856 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				27941FFE2BFC7E7100AEB856 /* ChasePace Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		27941FF72BFC7E7100AEB856 /* ChasePace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChasePace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChasePace Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		279420022BFC7E7100AEB856 /* ChasePaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePaceApp.swift; sourceTree = "<group>"; };
+		279420042BFC7E7100AEB856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		279420062BFC7E7200AEB856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		279420092BFC7E7200AEB856 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2794200F2BFC7E7200AEB856 /* ChasePace Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChasePace Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		279420132BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePace_Watch_AppTests.swift; sourceTree = "<group>"; };
+		279420192BFC7E7200AEB856 /* ChasePace Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChasePace Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2794201D2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePace_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePace_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27941FFA2BFC7E7100AEB856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2794200C2BFC7E7200AEB856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279420162BFC7E7200AEB856 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27941FF02BFC7E7100AEB856 = {
+			isa = PBXGroup;
+			children = (
+				279420012BFC7E7100AEB856 /* ChasePace Watch App */,
+				279420122BFC7E7200AEB856 /* ChasePace Watch AppTests */,
+				2794201C2BFC7E7200AEB856 /* ChasePace Watch AppUITests */,
+				27941FF82BFC7E7100AEB856 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27941FF82BFC7E7100AEB856 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27941FF72BFC7E7100AEB856 /* ChasePace.app */,
+				27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */,
+				2794200F2BFC7E7200AEB856 /* ChasePace Watch AppTests.xctest */,
+				279420192BFC7E7200AEB856 /* ChasePace Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		279420012BFC7E7100AEB856 /* ChasePace Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				279420022BFC7E7100AEB856 /* ChasePaceApp.swift */,
+				279420042BFC7E7100AEB856 /* ContentView.swift */,
+				279420062BFC7E7200AEB856 /* Assets.xcassets */,
+				279420082BFC7E7200AEB856 /* Preview Content */,
+			);
+			path = "ChasePace Watch App";
+			sourceTree = "<group>";
+		};
+		279420082BFC7E7200AEB856 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				279420092BFC7E7200AEB856 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		279420122BFC7E7200AEB856 /* ChasePace Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				279420132BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift */,
+			);
+			path = "ChasePace Watch AppTests";
+			sourceTree = "<group>";
+		};
+		2794201C2BFC7E7200AEB856 /* ChasePace Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2794201D2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift */,
+				2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "ChasePace Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27941FF62BFC7E7100AEB856 /* ChasePace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279420272BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace" */;
+			buildPhases = (
+				27941FF52BFC7E7100AEB856 /* Resources */,
+				279420262BFC7E7200AEB856 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279420002BFC7E7100AEB856 /* PBXTargetDependency */,
+			);
+			name = ChasePace;
+			productName = ChasePace;
+			productReference = 27941FF72BFC7E7100AEB856 /* ChasePace.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		27941FFC2BFC7E7100AEB856 /* ChasePace Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 279420232BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch App" */;
+			buildPhases = (
+				27941FF92BFC7E7100AEB856 /* Sources */,
+				27941FFA2BFC7E7100AEB856 /* Frameworks */,
+				27941FFB2BFC7E7100AEB856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ChasePace Watch App";
+			productName = "ChasePace Watch App";
+			productReference = 27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2794200E2BFC7E7200AEB856 /* ChasePace Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2794202A2BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch AppTests" */;
+			buildPhases = (
+				2794200B2BFC7E7200AEB856 /* Sources */,
+				2794200C2BFC7E7200AEB856 /* Frameworks */,
+				2794200D2BFC7E7200AEB856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				279420112BFC7E7200AEB856 /* PBXTargetDependency */,
+			);
+			name = "ChasePace Watch AppTests";
+			productName = "ChasePace Watch AppTests";
+			productReference = 2794200F2BFC7E7200AEB856 /* ChasePace Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		279420182BFC7E7200AEB856 /* ChasePace Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2794202D2BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch AppUITests" */;
+			buildPhases = (
+				279420152BFC7E7200AEB856 /* Sources */,
+				279420162BFC7E7200AEB856 /* Frameworks */,
+				279420172BFC7E7200AEB856 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2794201B2BFC7E7200AEB856 /* PBXTargetDependency */,
+			);
+			name = "ChasePace Watch AppUITests";
+			productName = "ChasePace Watch AppUITests";
+			productReference = 279420192BFC7E7200AEB856 /* ChasePace Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27941FF12BFC7E7100AEB856 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					27941FF62BFC7E7100AEB856 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					27941FFC2BFC7E7100AEB856 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					2794200E2BFC7E7200AEB856 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 27941FFC2BFC7E7100AEB856;
+					};
+					279420182BFC7E7200AEB856 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 27941FFC2BFC7E7100AEB856;
+					};
+				};
+			};
+			buildConfigurationList = 27941FF42BFC7E7100AEB856 /* Build configuration list for PBXProject "ChasePace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27941FF02BFC7E7100AEB856;
+			productRefGroup = 27941FF82BFC7E7100AEB856 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27941FF62BFC7E7100AEB856 /* ChasePace */,
+				27941FFC2BFC7E7100AEB856 /* ChasePace Watch App */,
+				2794200E2BFC7E7200AEB856 /* ChasePace Watch AppTests */,
+				279420182BFC7E7200AEB856 /* ChasePace Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27941FF52BFC7E7100AEB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27941FFB2BFC7E7100AEB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2794200A2BFC7E7200AEB856 /* Preview Assets.xcassets in Resources */,
+				279420072BFC7E7200AEB856 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2794200D2BFC7E7200AEB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279420172BFC7E7200AEB856 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27941FF92BFC7E7100AEB856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279420052BFC7E7100AEB856 /* ContentView.swift in Sources */,
+				279420032BFC7E7100AEB856 /* ChasePaceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2794200B2BFC7E7200AEB856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279420142BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		279420152BFC7E7200AEB856 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				279420202BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift in Sources */,
+				2794201E2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		279420002BFC7E7100AEB856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27941FFC2BFC7E7100AEB856 /* ChasePace Watch App */;
+			targetProxy = 27941FFF2BFC7E7100AEB856 /* PBXContainerItemProxy */;
+		};
+		279420112BFC7E7200AEB856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27941FFC2BFC7E7100AEB856 /* ChasePace Watch App */;
+			targetProxy = 279420102BFC7E7200AEB856 /* PBXContainerItemProxy */;
+		};
+		2794201B2BFC7E7200AEB856 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27941FFC2BFC7E7100AEB856 /* ChasePace Watch App */;
+			targetProxy = 2794201A2BFC7E7200AEB856 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		279420212BFC7E7200AEB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		279420222BFC7E7200AEB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		279420242BFC7E7200AEB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChasePace Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyo.ChasePace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		279420252BFC7E7200AEB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ChasePace Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyo.ChasePace.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		279420282BFC7E7200AEB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyo.ChasePace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		279420292BFC7E7200AEB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = averyo.ChasePace;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2794202B2BFC7E7200AEB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "averyo.ChasePace-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChasePace Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChasePace Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		2794202C2BFC7E7200AEB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "averyo.ChasePace-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChasePace Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ChasePace Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+		2794202E2BFC7E7200AEB856 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "averyo.ChasePace-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ChasePace Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Debug;
+		};
+		2794202F2BFC7E7200AEB856 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V347BRW4U8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "averyo.ChasePace-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "ChasePace Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27941FF42BFC7E7100AEB856 /* Build configuration list for PBXProject "ChasePace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279420212BFC7E7200AEB856 /* Debug */,
+				279420222BFC7E7200AEB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279420232BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279420242BFC7E7200AEB856 /* Debug */,
+				279420252BFC7E7200AEB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		279420272BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				279420282BFC7E7200AEB856 /* Debug */,
+				279420292BFC7E7200AEB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2794202A2BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2794202B2BFC7E7200AEB856 /* Debug */,
+				2794202C2BFC7E7200AEB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2794202D2BFC7E7200AEB856 /* Build configuration list for PBXNativeTarget "ChasePace Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2794202E2BFC7E7200AEB856 /* Debug */,
+				2794202F2BFC7E7200AEB856 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27941FF12BFC7E7100AEB856 /* Project object */;
+}

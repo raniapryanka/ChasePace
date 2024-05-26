@@ -6,34 +6,46 @@
 //
 
 import SwiftUI
+import WatchKit
 
-//Tab view layout
-//to access page controlView and gameS=cene (game play page)
 
 struct SessionPagingView: View {
-    
-    //page metrics muncul duluan --> GamePlay page
-    @State private var selection: Tab = .metrics
-    
-    //ke page controls and workout metrics
+    @EnvironmentObject var workoutManager: WorkoutManager
+    @State private var selection: Tab = .game //page yang muncul duluan --> GameView page
+
     enum Tab {
-        case controls, metrics
+        case controls, game, metrics
     }
     
     
     var body: some View {
         
-        //PAGE CAROUSEL(exit page, workout metric)
         TabView(selection: $selection) {
             
             //page control (Exit)
             ControlsView().tag(Tab.controls)
             
-            //page workout metric --> nanti ganti gameScene page
+            //GameView --> GameScene
+            GameView().tag(Tab.game)
+            
+            //page workout metric --> nanti ilangin
             MetricsView().tag(Tab.metrics)
         }
         
+        .navigationBarBackButtonHidden(true)
+        .onChange(of: workoutManager.running) {
+            displayMetricsView()
+        }
     }
+    
+    private func displayMetricsView() {
+        withAnimation {
+            selection = .metrics
+        }
+    }
+    
+    
+    
 }
 
 #Preview {

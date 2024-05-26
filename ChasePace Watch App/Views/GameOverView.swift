@@ -70,7 +70,7 @@ struct GameOverView: View {
     }
 }
 
-struct SummaryView_Previews: PreviewProvider {
+struct GameOverView_Previews: PreviewProvider {
     static var previews: some View {
         GameOverView()
     }

@@ -8,21 +8,17 @@
 import SwiftUI
 
 struct MetricsView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
+    
     
     var body: some View {
         
-        
         VStack(alignment: .leading){
-            //ngasih liat Metrics (Workout data) live monitor
-            //time text field --> default text
-            Text("03:15.23")
-                .foregroundColor(Color.yellow)
-                .fontWeight(.semibold)
             
-            //active energy measurement text field --> ambil dari workout manager
+            //active energy measurement text field --> ambil data dari workoutManager
             Text(
                 Measurement(
-                    value: 47,
+                    value: workoutManager.activeEnergy,
                     unit: UnitEnergy.kilocalories
                 ).formatted(
                     .measurement(
@@ -32,20 +28,22 @@ struct MetricsView: View {
                     )
                 )
             )
+
             
-            //heart rate text field --> ambil dari workout manager
+            //heart rate text field --> ambil data dari workoutManager
+
             Text(
-                153.formatted(
+                workoutManager.heartRate.formatted(
                     .number.precision(.fractionLength(0))
                 )
                 + "bpm"
                 
             )
             
-            //distance text view --> ambil dari workout manager
+            //distance text view --> ambil data dari workoutManager
             Text(
                 Measurement(
-                    value: 515,
+                    value: workoutManager.distance,
                     unit: UnitLength.meters
                 ).formatted(
                     .measurement(
@@ -56,10 +54,18 @@ struct MetricsView: View {
                 
             )
             
+            //Running pace text view --> ambil data dari workoutManager
+            Text(
+                Measurement(
+                    value: workoutManager.runningPace,
+                    unit: UnitSpeed.metersPerSecond
+                ).paceformatted
+            )
+            
+            
         }//end of vstack
-        .font(.system(.title, design: .rounded) .monospaced() . lowercaseSmallCaps()
-        )
         
+        .font(.system(size: 25, weight: .regular, design: .rounded) .monospaced() . lowercaseSmallCaps())
         .frame(maxWidth: .infinity, alignment: .leading)
         .ignoresSafeArea(edges: .bottom)
         .scenePadding()
@@ -74,3 +80,25 @@ struct MetricsView: View {
 #Preview {
     MetricsView()
 }
+
+
+extension Measurement where UnitType: UnitSpeed { //extension for unitspeed
+    var paceformatted: String {
+        let valueFormatter = NumberFormatter()
+        valueFormatter.maximumFractionDigits = 1
+        valueFormatter.minimumFractionDigits = 1
+        
+        
+        let paceformatted = MeasurementFormatter() //format measurement values into strings.
+        paceformatted.unitOptions = .providedUnit //UnitSpeed.minutesPerKilometer
+        paceformatted.unitStyle = .short //abbreviated units
+        
+        
+        let valueString = valueFormatter.string(from: NSNumber(value: self.value)) ?? ""
+        let unitString = paceformatted.string(from: self.unit)
+        
+        return "\(valueString) \(unitString)"
+
+    }
+}
+

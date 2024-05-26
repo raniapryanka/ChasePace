@@ -9,32 +9,21 @@ import SwiftUI
 
 @main
 struct ChasePace_Watch_AppApp: App {
+        @StateObject var workoutManager = WorkoutManager()
     
-    //give views access to WorkoutManager
-    //    @StateObject var workoutManager = WorkoutManager()
-    //
-    //    @SceneBuilder var body: some Scene {
-    //        WindowGroup {
-    //            NavigationView {
-    //                StartView()
-    //            }
-    //
-    //            .sheet(isPresented: $workoutManager.showingSummaryView){
-    //                SummaryView()
-    //            }
-    //
-    //            .environmentObject(workoutManager)
-    //        }
-    //    }
-    //}
+        @SceneBuilder var body: some Scene {
+            WindowGroup {
+                NavigationView {
+                    StartView()
+                }
     
+                .sheet(isPresented: $workoutManager.showingGameOverView){
+                    GameOverView()
+                }
     
-    var body: some Scene {
-        WindowGroup {
-            GameView()
+                .environmentObject(workoutManager)
+            }
         }
-    }
-    
     
 }
 

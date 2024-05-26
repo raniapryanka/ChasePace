@@ -9,12 +9,24 @@
 /* Begin PBXBuildFile section */
 		27941FFE2BFC7E7100AEB856 /* ChasePace Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		279420032BFC7E7100AEB856 /* ChasePaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420022BFC7E7100AEB856 /* ChasePaceApp.swift */; };
-		279420052BFC7E7100AEB856 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420042BFC7E7100AEB856 /* ContentView.swift */; };
+		279420052BFC7E7100AEB856 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420042BFC7E7100AEB856 /* StartView.swift */; };
 		279420072BFC7E7200AEB856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279420062BFC7E7200AEB856 /* Assets.xcassets */; };
 		2794200A2BFC7E7200AEB856 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279420092BFC7E7200AEB856 /* Preview Assets.xcassets */; };
 		279420142BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420132BFC7E7200AEB856 /* ChasePace_Watch_AppTests.swift */; };
 		2794201E2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794201D2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift */; };
 		279420202BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */; };
+		279420312BFC859800AEB856 /* SessionPagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420302BFC859800AEB856 /* SessionPagingView.swift */; };
+		279420332BFC8CAA00AEB856 /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420322BFC8CAA00AEB856 /* MetricsView.swift */; };
+		279420352BFC9E6000AEB856 /* ControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420342BFC9E6000AEB856 /* ControlsView.swift */; };
+		279420372BFCA16700AEB856 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420362BFCA16700AEB856 /* GameOverView.swift */; };
+		279420392BFCA96500AEB856 /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279420382BFCA96500AEB856 /* WorkoutManager.swift */; };
+		279421412BFF7D2500AEB856 /* GameHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279421402BFF7D2500AEB856 /* GameHostingController.swift */; };
+		279421432BFF7D4400AEB856 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279421422BFF7D4400AEB856 /* GameView.swift */; };
+		279421462BFF7D8B00AEB856 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279421452BFF7D8B00AEB856 /* GameScene.swift */; };
+		279421492BFF7DFD00AEB856 /* CGPoint+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279421482BFF7DFD00AEB856 /* CGPoint+Ext.swift */; };
+		2794214B2C004E2C00AEB856 /* Pixeled.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2794214A2C004E2C00AEB856 /* Pixeled.ttf */; };
+		279421502C00B09300AEB856 /* CountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794214F2C00B09300AEB856 /* CountDownView.swift */; };
+		279421522C01C8A200AEB856 /* HapticFeedbackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279421512C01C8A200AEB856 /* HapticFeedbackManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +71,7 @@
 		27941FF72BFC7E7100AEB856 /* ChasePace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChasePace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27941FFD2BFC7E7100AEB856 /* ChasePace Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChasePace Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		279420022BFC7E7100AEB856 /* ChasePaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePaceApp.swift; sourceTree = "<group>"; };
-		279420042BFC7E7100AEB856 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		279420042BFC7E7100AEB856 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		279420062BFC7E7200AEB856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		279420092BFC7E7200AEB856 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2794200F2BFC7E7200AEB856 /* ChasePace Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChasePace Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +79,20 @@
 		279420192BFC7E7200AEB856 /* ChasePace Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ChasePace Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2794201D2BFC7E7200AEB856 /* ChasePace_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePace_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChasePace_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		279420302BFC859800AEB856 /* SessionPagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionPagingView.swift; sourceTree = "<group>"; };
+		279420322BFC8CAA00AEB856 /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		279420342BFC9E6000AEB856 /* ControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlsView.swift; sourceTree = "<group>"; };
+		279420362BFCA16700AEB856 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
+		279420382BFCA96500AEB856 /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		2794203C2BFCB7EA00AEB856 /* ChasePace Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ChasePace Watch App.entitlements"; sourceTree = "<group>"; };
+		2794203D2BFCB80800AEB856 /* ChasePace-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ChasePace-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		279421402BFF7D2500AEB856 /* GameHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHostingController.swift; sourceTree = "<group>"; };
+		279421422BFF7D4400AEB856 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		279421452BFF7D8B00AEB856 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		279421482BFF7DFD00AEB856 /* CGPoint+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Ext.swift"; sourceTree = "<group>"; };
+		2794214A2C004E2C00AEB856 /* Pixeled.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pixeled.ttf; sourceTree = "<group>"; };
+		2794214F2C00B09300AEB856 /* CountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownView.swift; sourceTree = "<group>"; };
+		279421512C01C8A200AEB856 /* HapticFeedbackManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +144,14 @@
 		279420012BFC7E7100AEB856 /* ChasePace Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				2794203D2BFCB80800AEB856 /* ChasePace-Watch-App-Info.plist */,
+				2794203C2BFCB7EA00AEB856 /* ChasePace Watch App.entitlements */,
+				2794214C2C004E8F00AEB856 /* Fonts */,
 				279420022BFC7E7100AEB856 /* ChasePaceApp.swift */,
-				279420042BFC7E7100AEB856 /* ContentView.swift */,
+				279421472BFF7DE900AEB856 /* MyUtils */,
+				2794203A2BFCA98900AEB856 /* Controller */,
+				2794203B2BFCA9A600AEB856 /* Views */,
+				279421442BFF7D6C00AEB856 /* Scenes */,
 				279420062BFC7E7200AEB856 /* Assets.xcassets */,
 				279420082BFC7E7200AEB856 /* Preview Content */,
 			);
@@ -149,6 +181,54 @@
 				2794201F2BFC7E7200AEB856 /* ChasePace_Watch_AppUITestsLaunchTests.swift */,
 			);
 			path = "ChasePace Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		2794203A2BFCA98900AEB856 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				279420382BFCA96500AEB856 /* WorkoutManager.swift */,
+				279421402BFF7D2500AEB856 /* GameHostingController.swift */,
+				279421512C01C8A200AEB856 /* HapticFeedbackManager.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2794203B2BFCA9A600AEB856 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				279420042BFC7E7100AEB856 /* StartView.swift */,
+				2794214F2C00B09300AEB856 /* CountDownView.swift */,
+				279420302BFC859800AEB856 /* SessionPagingView.swift */,
+				279420342BFC9E6000AEB856 /* ControlsView.swift */,
+				279421422BFF7D4400AEB856 /* GameView.swift */,
+				279420322BFC8CAA00AEB856 /* MetricsView.swift */,
+				279420362BFCA16700AEB856 /* GameOverView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		279421442BFF7D6C00AEB856 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				279421452BFF7D8B00AEB856 /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		279421472BFF7DE900AEB856 /* MyUtils */ = {
+			isa = PBXGroup;
+			children = (
+				279421482BFF7DFD00AEB856 /* CGPoint+Ext.swift */,
+			);
+			path = MyUtils;
+			sourceTree = "<group>";
+		};
+		2794214C2C004E8F00AEB856 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2794214A2C004E2C00AEB856 /* Pixeled.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2794200A2BFC7E7200AEB856 /* Preview Assets.xcassets in Resources */,
+				2794214B2C004E2C00AEB856 /* Pixeled.ttf in Resources */,
 				279420072BFC7E7200AEB856 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,8 +390,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				279420052BFC7E7100AEB856 /* ContentView.swift in Sources */,
+				279420052BFC7E7100AEB856 /* StartView.swift in Sources */,
+				279421522C01C8A200AEB856 /* HapticFeedbackManager.swift in Sources */,
+				279420392BFCA96500AEB856 /* WorkoutManager.swift in Sources */,
 				279420032BFC7E7100AEB856 /* ChasePaceApp.swift in Sources */,
+				279420332BFC8CAA00AEB856 /* MetricsView.swift in Sources */,
+				279421432BFF7D4400AEB856 /* GameView.swift in Sources */,
+				279421462BFF7D8B00AEB856 /* GameScene.swift in Sources */,
+				279420352BFC9E6000AEB856 /* ControlsView.swift in Sources */,
+				279421412BFF7D2500AEB856 /* GameHostingController.swift in Sources */,
+				279421492BFF7DFD00AEB856 /* CGPoint+Ext.swift in Sources */,
+				279421502C00B09300AEB856 /* CountDownView.swift in Sources */,
+				279420312BFC859800AEB856 /* SessionPagingView.swift in Sources */,
+				279420372BFCA16700AEB856 /* GameOverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,12 +563,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChasePace Watch App/ChasePace Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChasePace Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = V347BRW4U8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChasePace-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -501,12 +595,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ChasePace Watch App/ChasePace Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChasePace Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = V347BRW4U8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ChasePace-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = ChasePace;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;

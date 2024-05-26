@@ -6,13 +6,24 @@
 //
 
 import SwiftUI
+import SpriteKit
 
 struct GameView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    var scene: SKScene {
+        
+        let scene = GameScene(size: WKInterfaceDevice.current().screenBounds.size)
+        scene.scaleMode = .aspectFill
+        return scene
     }
-}
 
-#Preview {
-    GameView()
+    
+    var body: some View {
+        //SwiftUI view that renders a SpriteKit scene
+        SpriteView(scene: scene)
+            .frame(width: WKInterfaceDevice.current().screenBounds.size.width,
+                   height: WKInterfaceDevice.current().screenBounds.size.height)
+            .edgesIgnoringSafeArea(.all) //scene uses the entire screen area
+    }
+    
+    
 }

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import WatchKit
+import SwiftUI
+
+class GameHostingController: WKHostingController<GameView> {
+    override var body: GameView {
+        return GameView() 
+    }
+}

@@ -9,32 +9,86 @@ import SwiftUI
 import HealthKit
 
 
-//StartView (Main Menu)
-
 struct StartView: View {
-    //add array of workout types based on the HKWorkoutActivityType --> Running
-    var workoutTypes: [HKWorkoutActivityType] = [.running, .cycling]
+    @EnvironmentObject var workoutManager: WorkoutManager
     
     
     var body: some View {
-        //=========DESIGN UI HERE===========
+        ZStack {
+            
+            //background
+            Image("BACKGROUND-main")
+            
+            VStack {
+                //easy
+                    NavigationLink(
+                        destination: CountDownView(),
+                        tag: .running,
+                        selection: $workoutManager.selectedWorkout
+                    ) {
+                        Image("easy")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 136.11, height: 49)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .background(Color.clear)
+                
+                    Spacer().frame(height: 12)
+
+                
+                //medium
+                    NavigationLink(
+                        destination: CountDownView(),
+                        tag: .running,
+                        selection: $workoutManager.selectedWorkout
+                    ) {
+                        Image("medium")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 136.11, height: 49)
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .background(Color.clear)
+                
+                
+                Spacer().frame(height: 12)
+
+            
+            //hard
+                NavigationLink(
+                    destination: CountDownView(),
+                    tag: .running,
+                    selection: $workoutManager.selectedWorkout
+                ) {
+                    Image("hard")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 136.11, height: 49)
+                }
+                .buttonStyle(PlainButtonStyle())
+                .background(Color.clear)
+
+            }
+            
+            .onAppear {
+                workoutManager.requestAuthorization()
+            }
+            
+            
+            
+            
+        }
         
         
-       //BUTTON VIEW --> link to main page (metricView/GameScene)
-        List(workoutTypes) { workoutTypes in 
-            NavigationLink(
-                workoutTypes.name,
-                destination: SessionPagingView() //ke page tab view (ControlsView and GameScene)
-            ).padding(EdgeInsets(top: 15, leading: 5, bottom: 15, trailing: 5))
-        } 
-        .listStyle(.carousel) //depth effect when scrolling
-        .navigationBarTitle("Workouts") //title
         
         
         
     }
+    
+    
 }
-
+    
 
 
 struct StartView_Previews: PreviewProvider {
@@ -43,24 +97,3 @@ struct StartView_Previews: PreviewProvider {
     }
 }
 
-
-extension HKWorkoutActivityType: Identifiable {
-    public var id: UInt {
-        rawValue
-    }
-
-    var name: String {
-        switch self {
-            
-        //main button chasepace
-        case .running:
-            return "Play"
-            
-        //nanti hapus
-        case .cycling:
-            return "Bike"
-        default:
-            return ""
-        }
-    }
-}

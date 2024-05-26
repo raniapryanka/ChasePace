@@ -8,19 +8,27 @@
 import SwiftUI
 
 struct ControlsView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
+    
+    
     var body: some View {
         
-        //Layout Exit button
-        VStack {
+        ZStack {
+            //background
+            Image("BACKGROUND-DARK-2")
+            
+            
+            //exit button
             Button {
+                workoutManager.endWorkout() 
             } label: {
-                Image(systemName: "xmark")
-                }
-                .tint(Color.red)
-                .font(.title2)
-                Text("End")
+                Image("Exit")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 136.11, height: 49)
+            }
+            .buttonStyle(PlainButtonStyle())
         }
-          
         
     }
 }
